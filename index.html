@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs"></script>
+  <title>График и Стакан</title>
+</head>
+<body>
+<div class="container">
+  <div class="chart-container">
+    <canvas id="chartCanvas"></canvas>
+  </div>
+  <div class="order-book-container">
+    <canvas id="orderBookCanvas"></canvas>
+  </div>
+</div>
+<button id="buyButton">Buy</button>
+<button id="sellButton">Sell</button>
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Ордер</h2>
+    <label for="price">Цена:</label>
+    <input type="text" id="price" name="price">
+    <label for="quantity">Количество:</label>
+    <input type="text" id="quantity" name="quantity">
+    <button id="confirmOrder">Подтвердить</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
